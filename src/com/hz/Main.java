@@ -21,8 +21,11 @@ public class Main {
 
         // IF WE HAVE TO ADD AN OTHER TYPE OF CARD...
         // ...I QUIT THIS JOB.
-        PostCard card = new PostCard(printer, false, true);
-
+        PostCard card = new PostCard(printer);
         card.print();
+
+        printer.printLine("----------------next-------------");
+        GraduationCard gcard = new GraduationCard(printer);
+        gcard.print();
     }
 }
